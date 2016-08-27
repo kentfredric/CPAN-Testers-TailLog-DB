@@ -1,0 +1,9 @@
+Build.PL
+Changes
+LICENSE
+MANIFEST
+MANIFEST.SKIP
+META.json
+META.yml
+lib/CPAN/Testers/TailLog/DB.pm
+metamerge.json
