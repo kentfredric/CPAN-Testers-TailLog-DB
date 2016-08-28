@@ -109,7 +109,7 @@ translator:
   no_comments: 0
   parser_args:
     sources:
-      - Result::TestResult
+      - TestResult
   parser_type: SQL::Translator::Parser::DBIx::Class
   producer_args: {}
   producer_type: SQL::Translator::Producer::YAML

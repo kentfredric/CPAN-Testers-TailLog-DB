@@ -15,9 +15,9 @@ use DBIx::Class::Schema;
 our @ISA = qw( DBIx::Class::Schema );
 
 #<<<
-__PACKAGE__->load_classes(qw(
-  Result::TestResult
-));
+__PACKAGE__->load_classes({
+  __PACKAGE__ . '::Result' => [qw/ TestResult /],
+});
 #>>>
 
 sub schema_version { $SCHEMA_VERSION }

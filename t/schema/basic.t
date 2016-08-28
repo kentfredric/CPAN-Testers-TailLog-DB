@@ -17,7 +17,7 @@ in_tempdir "db-io-test" => sub {
             ]
         }
       );
-    my $rs = $db->resultset('Result::TestResult');
+    my $rs = $db->resultset('TestResult');
     $db->txn_do(
         sub {
             my $record = $rs->new(
