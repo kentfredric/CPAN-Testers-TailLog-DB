@@ -1,0 +1,118 @@
+---
+schema:
+  procedures: {}
+  tables:
+    test_result:
+      constraints:
+        - deferrable: 1
+          expression: ''
+          fields:
+            - uuid
+          match_type: ''
+          name: ''
+          on_delete: ''
+          on_update: ''
+          options: []
+          reference_fields: []
+          reference_table: ''
+          type: PRIMARY KEY
+      fields:
+        accepted:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: accepted
+          order: 1
+          size:
+            - 0
+        filename:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: filename
+          order: 2
+          size:
+            - 0
+        grade:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: grade
+          order: 3
+          size:
+            - 0
+        perl_version:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: perl_version
+          order: 4
+          size:
+            - 0
+        platform:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: platform
+          order: 5
+          size:
+            - 0
+        reporter:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: reporter
+          order: 6
+          size:
+            - 0
+        submitted:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: submitted
+          order: 7
+          size:
+            - 0
+        uuid:
+          data_type: ''
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 1
+          is_unique: 0
+          name: uuid
+          order: 8
+          size:
+            - 0
+      indices: []
+      name: test_result
+      options: []
+      order: 1
+  triggers: {}
+  views: {}
+translator:
+  add_drop_table: 0
+  filename: ~
+  no_comments: 0
+  parser_args:
+    sources:
+      - Result::TestResult
+  parser_type: SQL::Translator::Parser::DBIx::Class
+  producer_args: {}
+  producer_type: SQL::Translator::Producer::YAML
+  show_warnings: 0
+  trace: 0
+  version: 0.11021

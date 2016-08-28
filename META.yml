@@ -16,6 +16,15 @@ provides:
   CPAN::Testers::TailLog::DB:
     file: lib/CPAN/Testers/TailLog/DB.pm
     version: '0.001000'
+  CPAN::Testers::TailLog::DB::Schema:
+    file: lib/CPAN/Testers/TailLog/DB/Schema.pm
+    version: '0.001000'
+  CPAN::Testers::TailLog::DB::Schema::DeploymentHandler:
+    file: lib/CPAN/Testers/TailLog/DB/Schema/DeploymentHandler.pm
+    version: '0.001000'
+  CPAN::Testers::TailLog::DB::Schema::Result::TestResult:
+    file: lib/CPAN/Testers/TailLog/DB/Schema/Result/TestResult.pm
+    version: '0.001000'
 requires:
   perl: '5.006'
 resources:

@@ -8,11 +8,24 @@
       },
       "runtime" : {
          "requires" : {
+            "DBIx::Class::Core" : "0",
+            "DBIx::Class::DeploymentHandler" : "0",
+            "DBIx::Class::Schema" : "0",
+            "File::ShareDir" : "0",
+            "Path::Tiny" : "0.014",
+            "constant" : "0",
             "perl" : "5.006"
          }
       },
       "test" : {
-         "requires" : {}
+         "recommends" : {
+            "DBD::SQLite" : "0"
+         },
+         "requires" : {
+            "Test::More" : "0.88",
+            "Test::Needs" : "0",
+            "Test::TempDir::Tiny" : "0.014"
+         }
       },
       "x_examples" : {
          "requires" : {}
