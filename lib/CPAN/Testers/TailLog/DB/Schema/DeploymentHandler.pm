@@ -62,7 +62,7 @@ sub new {
     $self->{dh_args}->{script_directory} =
       $args->{script_directory} || DDL_ROOT;
     $self->{dh_args}->{databases} =
-      $args->{databases} || [qw( PostgreSQL  JSON SQLite MySQL )];
+      $args->{databases} || [qw( PostgreSQL SQLite MySQL )];
     if ( exists $args->{to_version} ) {
         $self->{dh_args}->{to_version} = $args->{to_version};
     }
@@ -102,4 +102,3 @@ sub install {
 }
 
 1;
-
